@@ -35,6 +35,16 @@ You must download the code and require it manually.
   (require 'org-excalidraw)
 #+end_src
 
+or use =use-package= with =quelpa= enabled: 
+
+#+begin_src emacs-lisp
+  (use-package org-excalidraw
+    :commands (org-excalidraw-create-drawing)
+    :quelpa (org-excalidraw :repo 4honor/org-excalidraw :fetcher github))
+
+  (require 'org-excalidraw)
+#+end_src
+
 * Usage
 
 - Treat =excalidraw= link type in the same way org mode provides for other link types
