@@ -1,18 +1,8 @@
 =org-excalidraw.el= is developed to create, open, export, and display excalidraw in org mode.
 
-* Installation
-
-You must download the code and require it manually.
-
-#+begin_src emacs-lisp
-  ;; add to load path
-  (add-to-list 'load-path "/path/to/org-excalidraw.el")
-
-  ;; load
-  (require 'org-excalidraw)
-#+end_src
-
 * Requirements
+
+To work as experted, the following requirements should be fullfiled.
 
 ** Open Drawings
 
@@ -32,6 +22,23 @@ following softwares should be setuped correctly.
 
 - [prefered] [[https://github.com/yuzutech/kroki-cli][yuzutech/kroki-cli]] can be installed via binary, please setup according to the manual  
 - [[https://github.com/Timmmm/excalidraw_export][Timmmm/excalidraw_export]] can be installed via ~npm install -g excalidraw_export~
+
+* Installation
+
+You must download the code and require it manually.
+
+#+begin_src emacs-lisp
+  ;; add to load path
+  (add-to-list 'load-path "/path/to/org-excalidraw.el")
+
+  ;; load
+  (require 'org-excalidraw)
+#+end_src
+
+* Usage
+
+- Treat =excalidraw= link type in the same way org mode provides for other link types
+- Command =org-excalidraw-create-drawing= can be used to creat a blank drawing
 
 * Thanks
 
