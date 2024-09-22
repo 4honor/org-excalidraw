@@ -1,4 +1,4 @@
-;;; org-excalidraw.el -- org excalidraw link  -*- lexical-binding: t; -*-
+;;; org-excalidraw.el --- Tools for org excalidraw link  -*- lexical-binding: t; -*-
 
 ;; Author: 4honor <binz.hust@gmail.com>
 ;; URL: https://github.com/4honor/org-excalidraw
