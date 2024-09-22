@@ -1,0 +1,41 @@
+=org-excalidraw.el= is developed to create, open, export, and display excalidraw in org mode.
+
+* Installation
+
+You must download the code and require it manually.
+
+#+begin_src emacs-lisp
+  ;; add to load path
+  (add-to-list 'load-path "/path/to/org-excalidraw.el")
+
+  ;; load
+  (require 'org-excalidraw)
+#+end_src
+
+* Requirements
+
+** Open Drawings
+
+In order to open/edit excalidraw, you can:
+
+1. Install an excalidraw app in Google Chrome
+2. Make the excalidraw the default application to open files with =.excalidraw= extension
+3. Use resource opener of your desktop environment to verify:
+
+   - For Linux, run ~xdg-open /path/to/example.excaldiraw~
+   - For Mac, run ~open /path/to/example.excalidraw~
+   
+** Create Thumbnails
+
+SVG thumbnails are created for exporting and displaying. In order to achieve this goal, one of the
+following softwares should be setuped correctly.
+
+- [prefered] [[https://github.com/yuzutech/kroki-cli][yuzutech/kroki-cli]] can be installed via binary, please setup according to the manual  
+- [[https://github.com/Timmmm/excalidraw_export][Timmmm/excalidraw_export]] can be installed via ~npm install -g excalidraw_export~
+
+* Thanks
+
+The work is based on the following works:
+
+- [[https://github.com/TobiasZawada/org-yt][TobiasZawada/org-yt: Youtube links in org-mode]] for the display part
+- [[https://github.com/wdavew/org-excalidraw][wdavew/org-excalidraw]] provides the initial inspirations and the create/open part
