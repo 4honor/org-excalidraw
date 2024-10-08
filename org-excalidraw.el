@@ -41,7 +41,7 @@
   :group 'org-excalidraw
   :type 'string)
 
-(defcustom org-excalidraw-default-directory "."
+(defcustom org-excalidraw-default-directory nil
   "Default directory for new excalidraw diagrams."
   :group 'org-excalidraw
   :type 'string)
@@ -89,7 +89,9 @@
 
   (interactive)
 
-  (let* ((directory (expand-file-name org-excalidraw-default-directory))
+  (let* ((directory (if org-excalidraw-default-directory
+                        (expand-file-name org-excalidraw-default-directory)
+                      nil))
          (path (read-file-name "Enter path: " directory))
          (link (format "[[excalidraw:%s]]" path)))
 

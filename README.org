@@ -40,7 +40,9 @@ or use =use-package= with =quelpa= enabled:
 #+begin_src emacs-lisp
   (use-package org-excalidraw
     :commands (org-excalidraw-create-drawing)
-    :quelpa (org-excalidraw :repo 4honor/org-excalidraw :fetcher github))
+    :quelpa (org-excalidraw :repo 4honor/org-excalidraw :fetcher github)
+    ;; customize diragram directory
+    (setq org-excalidraw-default-directory "/path/to/diragrams/root"))
 
   (require 'org-excalidraw)
 #+end_src
@@ -49,6 +51,7 @@ or use =use-package= with =quelpa= enabled:
 
 - Treat =excalidraw= link type in the same way org mode provides for other link types
 - Command =org-excalidraw-create-drawing= can be used to creat a blank drawing
+- Customization =org-excalidraw-default-directory= can be used to specify where the new diagrams should be stored
 
 * Thanks
 
