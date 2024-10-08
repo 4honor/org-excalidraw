@@ -41,6 +41,11 @@
   :group 'org-excalidraw
   :type 'string)
 
+(defcustom org-excalidraw-default-directory "."
+  "Default directory for new excalidraw diagrams."
+  :group 'org-excalidraw
+  :type 'string)
+
 
 ;;; Open, Create, Export, and Display
 ;; Open
@@ -84,7 +89,8 @@
 
   (interactive)
 
-  (let* ((path (read-file-name "Enter path: "))
+  (let* ((directory (expand-file-name org-excalidraw-default-directory))
+         (path (read-file-name "Enter path: " directory))
          (link (format "[[excalidraw:%s]]" path)))
 
     (if (not (file-exists-p path))
