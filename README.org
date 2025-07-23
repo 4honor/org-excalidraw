@@ -2,7 +2,7 @@
 
 * Requirements
 
-To work as experted, the following requirements should be fullfiled.
+To work as experted, the following requirements should be fullfilled.
 
 ** Open Drawings
 
