@@ -56,7 +56,7 @@
   (let ((path (expand-file-name link)))
     ;; Validate file extension
     (unless (string-suffix-p ".excalidraw" path)
-      (error "Excalidraw diagrams must ends with .excaldiraw extension."))
+      (error "Excalidraw diagrams must ends with .excalidraw extension."))
 
     ;; Open file
     (pcase system-type
@@ -122,7 +122,7 @@
 
     ;; Validate
     (unless (string-suffix-p ".excalidraw" path)
-      (error "Excalidraw diagrams must ends with .excaldiraw extension."))
+      (error "Excalidraw diagrams must ends with .excalidraw extension."))
 
     ;; Convert
     (cond
